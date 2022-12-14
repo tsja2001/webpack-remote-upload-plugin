@@ -13,7 +13,7 @@ const WebpackAutoUploadPlugin = require('webpack-auto-upload-plugin')
 module.exports = {
 	...
   plugins: [
-      new WebpackAutoUploadPlugin({
+		new WebpackAutoUploadPlugin({
       // 服务器地址(必传)
       host: '123.456.789'
       // 服务器用户名(默认root)
