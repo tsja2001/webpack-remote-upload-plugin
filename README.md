@@ -27,5 +27,7 @@ module.exports = {
 }
 ```
 
+每次执行 `npx webpack`或者`npm run build`打包命令时, 就会将打包好的文件自动部署到远程服务器中
+
 # 源码
 https://github.com/tsja2001/webpack-auto-upload-plugin
