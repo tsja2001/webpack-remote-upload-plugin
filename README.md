@@ -2,18 +2,18 @@
 
 # 安装
 ```js
-npm i webpack-auto-upload-plugin -D
+npm i webpack-remote-upload-plugin -D
 ```
 
 # 使用
 ```js
 // webpack.config.js
-const WebpackAutoUploadPlugin = require('webpack-auto-upload-plugin')
+const WebpackRemoteUploadPlugin = require('webpack-remote-upload-plugin')
 
 module.exports = {
 	...
   plugins: [
-		new WebpackAutoUploadPlugin({
+    new WebpackRemoteUploadPlugin({
       // 服务器地址(必传)
       host: '123.456.789'
       // 服务器用户名(默认root)
