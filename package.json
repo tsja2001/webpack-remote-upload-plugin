@@ -1,0 +1,24 @@
+{
+  "name": "webpack-auto-upload-plugin",
+  "version": "1.0.0",
+  "description": "automatically uploads the built files to a remote server after a successful webpack build",
+  "main": "myPlugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "build",
+    "automation",
+    "auto upload",
+    "deployment",
+    "remote",
+    "server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-ssh": "^13.0.0"
+  }
+}
