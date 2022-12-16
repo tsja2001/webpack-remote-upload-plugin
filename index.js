@@ -34,7 +34,7 @@ class MyPlugin {
 
   // 连接服务器
   async connectServer() {
-    console.log('正在连接远程服务器')
+    console.log('connecting 正在连接远程服务器')
 
     try {
       await this.ssh.connect({
@@ -43,10 +43,10 @@ class MyPlugin {
         password: this.options.password,
       })
     } catch (error) {
-      throw new Error('服务器连接失败', error)
+      throw new Error('connect failed 服务器连接失败', error)
     }
 
-    console.log('服务器连接成功')
+    console.log('connect succeeded 服务器连接成功')
   }
 
   // 上传文件
@@ -60,22 +60,28 @@ class MyPlugin {
       }
     )
     if (status) {
-      console.log('上传成功')
+      console.log('upload succeeded! 上传成功')
     } else {
-      console.log('文件上传失败')
+      console.log('upload failed! 文件上传失败')
     }
   }
 
   // 验证传入options
   async verifyOptions() {
     if (!this.options.host) {
-      throw new Error('缺少host参数, 需要远程服务器地址')
+      throw new Error(
+        'host is required 缺少host参数, 需要远程服务器地址'
+      )
     }
     if (!this.options.password) {
-      throw new Error('缺少password参数, 需要服务器密码')
+      throw new Error(
+        'password is required 缺少password参数, 需要服务器密码'
+      )
     }
     if (!this.options.remotePath) {
-      throw new Error('缺少remotePath参数, 需要放远程文件存放路径')
+      throw new Error(
+        'remotePath is required 缺少remotePath参数, 需要放远程文件存放路径'
+      )
     }
   }
 }

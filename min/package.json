@@ -1,6 +1,6 @@
 {
   "name": "webpack-remote-upload-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "automatically uploads the built files to a remote server after a successful webpack build",
   "main": "index.js",
   "scripts": {
